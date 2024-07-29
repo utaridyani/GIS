@@ -27,8 +27,8 @@
             border-radius: 8px;
             padding: 20px;
             box-shadow: 0px 0px 10px 0px #000000;
-            max-width: 400px; /* Adjust the max-width to your preference */
-            width: 100%; /* Ensure the box takes the full width within the max-width */
+            max-width: 400px; 
+            width: 100%;
         }
     </style>
 </head>

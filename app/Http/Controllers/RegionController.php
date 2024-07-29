@@ -10,7 +10,7 @@ class RegionController extends Controller
     public function index()
     {
         $response = Http::withHeaders([
-            'Authorization' => 'Bearer ' . session('token'), // Use the bearer token
+            'Authorization' => 'Bearer ' . session('token'),
         ])->get('https://gisapis.manpits.xyz/api/mregion');
 
         $data = $response->json();

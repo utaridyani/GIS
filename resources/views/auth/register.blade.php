@@ -43,7 +43,7 @@
                 </script>
             @endif
 
-            @if(session('success'))
+            {{-- @if(session('success'))
                 <script>
                     Swal.fire({
                         icon: 'success',
@@ -51,10 +51,13 @@
                         text: '{{ session('success') }}',
                     });
                 </script>
-            @endif
+            @endif --}}
 
             <div class="form-group text-center">
                 <button type="submit" class="btn btn-primary">Register</button>
+            </div>
+            <div style="text-align: center; font-size: 11px">
+                <p>Sudah memiliki akun? <a href="{{ route('login') }}">Login disini</a></p>
             </div>
         </form>
     </div>

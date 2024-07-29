@@ -20,7 +20,7 @@ class RegisterController extends Controller
             'password' => $request->input('password'),
         ]);
 
-        $responseData = $response->json(); // Convert the response to JSON
+        $responseData = $response->json();
 
         if ($response->successful() && isset($responseData['meta']['message']) && $responseData['meta']['message'] === 'Successfully create user') {
             $userData = $responseData['meta']['data'];

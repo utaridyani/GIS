@@ -35,18 +35,21 @@
                 </script>
             @endif
 
-            @if(session('success'))
+            {{-- @if(session('userName'))
                 <script>
                     Swal.fire({
                         icon: 'success',
                         title: 'Success',
-                        text: '{{ session('success') }}',
+                        text: 'Welcome + {{ session('userName') }}',
                     });
                 </script>
-            @endif
+            @endif --}}
             
             <div class="form-group text-center">
                 <button type="submit" class="btn btn-primary">Login</button>
+            </div>
+            <div style="text-align: center; font-size: 11px">
+                <p>Belum memiliki akun? <a href="{{ route('register') }}">Daftar disini</a></p>
             </div>
         </form>
     </div>
